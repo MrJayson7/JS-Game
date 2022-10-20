@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Landing Page/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <title>Combination Lock | Home</title>
+</head>
+<body>
+    <section id="landingPage" class="container">
+        <div class="firstLine">
+            <div class="titleFirst">C</div>
+            <div class="titleFirst">O</div>
+            <div class="titleFirst">M</div>
+            <div class="titleFirst">B</div>
+            <div class="titleFirst">I</div>
+            <div class="titleFirst">N</div>
+            <div class="titleFirst">A</div>
+            <div class="titleFirst">T</div>
+            <div class="titleFirst">I</div>
+            <div class="titleFirst">O</div>
+            <div class="titleFirst">N</div>
+        </div>
+        <div class="secondLine">
+            <div class="titleSecond">L</div>
+            <div class="titleSecond">O</div>
+            <div class="titleSecond">C</div>
+            <div class="titleSecond">K</div>
+        </div>
+        <button class="landingPageBtn" id="startGame" type="submit">Let's Play!</button>
+        <button class="landingPageBtn" id="instruction">How to Play?</button>
+        <img class="brain" src="./assets/brain.png">
+        <img class="padlock" src="./assets/padlock.png">
+        <img class="numbers" src="./assets/number-blocks.png">
+        <img class="qmark" src="./assets/question-mark.png">
+        <img class="bulb" src="./assets/light-bulb.png">
+    </section>
+    <div class="modal hidden">
+        <button class="closeModalBtn">&times;</button>
+        <h2 id="instructionHead">How to Play Combination Lock?</h2><br><br>
+        <p class="generalInstruction">
+          The goal of the game is to guess the given four-digit combination. You must use the clues that AI provides you with, in order to find the combination in the least amount of attempts.
+        </p><br>
+        <ul>
+            <li class="specificInstruction">
+                The given combination is not allowed to have repetitions amongst its digits, but the player can provide an input with repetitive figure as part of player's technique, and the leftmost digit can be 0.
+            </li><br>
+            <li class="specificInstruction">
+                A.I. will assess each of your guesses by comparing the digits of the combination provided by the player and those of the combination it originally "thought of".
+            </li><br>
+            <li class="specificInstruction">
+                For instance, assume A.I. "thought of" 1759 and the player enter 1590. A.I. clue would be:
+                <strong>1590 = 1-1-2</strong>. Here digit 1 is in the original number and, moreover is in correct position. The digit 9 is in the original number but in wrong position. Digit 5 and 0 are not in the original number, so they are just wrong.
+            </li><br>
+        </ul>
+    </div>
+    <div class="overlay hidden"></div>
+</body>
+    <script src="script.js"></script>
+</html>

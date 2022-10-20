@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Combination Lock.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <title>Combination Lock</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <ul id="nav-menu" class="links">
+                <li><a href="../Landing Page/index.html">Home</a></li>
+                <li><a href="Combination Lock.html">New Game</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="matrix"></div>
+        <div class="locked-indicator">
+            <div class="upper-rec"></div>
+            <div class="lower-rec">
+                <div class="combination">
+                    <div id="wheel1" class="wheel wheel-1">
+                        <div class="increment-btn" index="0">
+                            <img class="count-up" src="../assets/arrowUp.png" >
+                        </div>
+                        <p id="num0" class="digit" index="0">1</p>
+                        <div class="decrement-btn" index="0">
+                            <img class="count-down" src="../assets/arrowDown.png">
+                        </div>
+                    </div>
+                    <div id="wheel2"  class="wheel wheel-2">
+                        <div class="increment-btn" index="1">
+                            <img class="count-up" src="../assets/arrowUp.png">
+                        </div>
+                        <p id="num1" class="digit" index="1">2</p>
+                        <div class="decrement-btn" index="1">
+                            <img class="count-down" src="../assets/arrowDown.png">
+                        </div>
+                    </div>
+                    <div id="wheel3"  class="wheel wheel-3">
+                        <div class="increment-btn" index="2">
+                            <img class="count-up" src="../assets/arrowUp.png">
+                        </div>
+                        <p id="num2" class="digit" index="2">3</p>
+                        <div class="decrement-btn" index="2">
+                            <img class="count-down" src="../assets/arrowDown.png">
+                        </div>
+                    </div>
+                    <div id="wheel4"  class="wheel wheel-4">
+                        <div class="increment-btn" index="3">
+                            <img class="count-up" src="../assets/arrowUp.png">
+                        </div>
+                        <p  id="num3" class="digit" index="3">4</p>
+                        <div class="decrement-btn" index="3">
+                            <img class="count-down" src="../assets/arrowDown.png">
+                        </div>
+                    </div>
+                </div>      
+            </div>
+            <button class="submit-btn">Attempt</button>
+        </div>
+        <div class="summary">
+            <p class="hints-board">Hints</p>
+        </div>
+        <div id="modal" class="hidden">
+            <p class="message">Congratulations! You guess the correct combination!</p>
+            <button id="newGame">Play Again!</button>
+        </div>
+        <div class="matrix"></div>
+    </div>
+    <embed src="../assets/ambiance.mp3" loop="true" autostart="true" width="2" height="0">
+</body>
+    <script src="Combination Lock.js"></script>
+</html>
